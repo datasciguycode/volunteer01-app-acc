@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer</title>
+    <base href="/volunteer01-app-acc/" />
+    
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="Volunteer.styles.css" rel="stylesheet" />
+    <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.yiodnjoszm.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.l1ds2rhypd.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.2hocyfcbj2.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.js": "sha256-lh8bY3DINgTiqGL/cwOeVaJGdfE2ex1o8MzwCbmlZZE=",
+    "./_framework/blazor.webassembly.yiodnjoszm.js": "sha256-lh8bY3DINgTiqGL/cwOeVaJGdfE2ex1o8MzwCbmlZZE=",
+    "./_framework/dotnet.native.js": "sha256-CU8oL4L0VAwGe3hCyxZDy7keJq9dcsWED0JKqrvlUb4=",
+    "./_framework/dotnet.native.l1ds2rhypd.js": "sha256-CU8oL4L0VAwGe3hCyxZDy7keJq9dcsWED0JKqrvlUb4=",
+    "./_framework/dotnet.runtime.2hocyfcbj2.js": "sha256-5oRcSUQSLbUYyq9jPgwB6domrDHYrvLX+53QxY+0y48=",
+    "./_framework/dotnet.runtime.js": "sha256-5oRcSUQSLbUYyq9jPgwB6domrDHYrvLX+53QxY+0y48="
+  }
+}</script>
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="." class="reload">Reload</a>
+        <span class="dismiss">🗙</span>
+    </div>
+    <script>
+        // Safe JS interop helper for getting URL hash (replaces eval usage)
+        window.getLocationHash = () => window.location.hash;
+
+        // Focus element by ID (finds textarea inside FluentTextArea component)
+        window.focusElement = (id) =>
+        {
+            const element = document.getElementById(id);
+            if (element)
+            {
+                const textarea = element.querySelector('textarea') || element;
+                textarea.focus();
+            }
+        };
+    </script>
+    <script src="js/site.js"></script>
+    <script src="_framework/blazor.webassembly.yiodnjoszm.js"></script>
+</body>
+
+</html>
